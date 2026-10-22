@@ -1,0 +1,1524 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>오사카 3박 4일 여행 일정표 · 2026.11.19–11.22</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" />
+<link rel="stylesheet" href="assets/hatch-maps.css" />
+<style>
+:root{
+  --bg:#ffffff;
+  --bg-soft:#f4f5f6;
+  --ink:#1f2430;
+  --ink-soft:#5b6372;
+  --line:#e4e6ea;
+  --card:#ffffff;
+  --chip:#f1f2f4;
+  --day1:#d6572b;
+  --day2:#2b7cd3;
+  --day3:#2e9e5b;
+  --day4:#b07427;
+  --accent:#1f6f4a;
+  --nav-bg:rgba(255,255,255,.94);
+  --shadow:0 1px 3px rgba(20,24,35,.08),0 6px 18px rgba(20,24,35,.06);
+  color-scheme:light dark;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#14161b;
+    --bg-soft:#1b1e24;
+    --ink:#eceef2;
+    --ink-soft:#a7adbb;
+    --line:#2c313a;
+    --card:#1c1f26;
+    --chip:#262b34;
+    --day1:#ef7a4d;
+    --day2:#5b9be6;
+    --day3:#57bd7c;
+    --day4:#d29a52;
+    --accent:#7ccfa6;
+    --nav-bg:rgba(20,22,27,.92);
+    --shadow:0 1px 3px rgba(0,0,0,.35),0 6px 18px rgba(0,0,0,.3);
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  line-height:1.62;font-size:16px;
+}
+h1,h2,h3{line-height:1.3;margin:0}
+a{color:var(--day2)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px 80px}
+nav.jump{
+  position:sticky;top:0;z-index:50;background:var(--nav-bg);
+  backdrop-filter:saturate(1.1) blur(8px);-webkit-backdrop-filter:saturate(1.1) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+nav.jump .bar{
+  max-width:960px;margin:0 auto;padding:8px 16px;
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;
+}
+nav.jump .bar::-webkit-scrollbar{display:none}
+nav.jump a{
+  flex:0 0 auto;text-decoration:none;color:var(--ink-soft);
+  font-size:13px;font-weight:500;padding:7px 13px;border-radius:999px;
+  border:1px solid var(--line);background:var(--card);white-space:nowrap;
+}
+nav.jump a b{font-weight:900;margin-right:3px}
+nav.jump a.d1 b{color:var(--day1)} nav.jump a.d2 b{color:var(--day2)}
+nav.jump a.d3 b{color:var(--day3)} nav.jump a.d4 b{color:var(--day4)}
+header.trip{padding:44px 0 8px;max-width:960px;margin:0 auto}
+.route{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+.route h1{
+  font-family:"Noto Serif KR",serif;font-size:clamp(26px,5.6vw,40px);
+  font-weight:700;letter-spacing:-.01em;
+}
+.route .kicker{
+  font-size:14px;color:var(--ink-soft);font-weight:500;
+}
+.meta-flags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.flag{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--chip);border:1px solid var(--line);border-radius:10px;
+  padding:7px 12px;font-size:13px;color:var(--ink);
+}
+.flag svg{width:15px;height:15px;flex:0 0 auto}
+.flag .sub{color:var(--ink-soft)}
+.pack{margin:14px 0 0;font-size:13px;color:var(--ink-soft)}
+section{margin-top:56px}
+/* booking status alert */
+section.status-box{margin-top:32px}
+.status-box{
+  border:1px solid #e8c39a;border-radius:18px;background:#fdf3e7;
+  box-shadow:var(--shadow);overflow:hidden;margin-top:32px;
+}
+.status-head{
+  display:flex;align-items:center;gap:10px;padding:14px 20px;
+  border-bottom:1px solid #e8c39a;flex-wrap:wrap;
+}
+.status-head svg{width:20px;height:20px;flex:0 0 auto;color:#b3541e}
+.status-head h2{font-size:16px;font-weight:900}
+.status-badge{
+  margin-left:auto;font-size:12.5px;font-weight:700;color:#fff;background:var(--day1);
+  border-radius:999px;padding:4px 14px;
+}
+ul.status-rows{list-style:none;margin:0;padding:6px 0}
+.status-rows li{
+  display:grid;grid-template-columns:56px 1fr;gap:6px 12px;
+  padding:11px 20px;border-top:1px solid #f0ddc2;
+}
+.status-rows li:first-child{border-top:0}
+.status-rows .k{font-size:12px;font-weight:900;color:#b3541e;white-space:nowrap;padding-top:4px}
+.status-rows .v{font-size:14.5px}
+.status-rows .v b.hl{color:var(--day1)}
+a.product-link{
+  display:inline-block;text-decoration:none;font-weight:700;color:#b3541e;
+  border:1px solid #e8c39a;background:#fff;border-radius:10px;padding:6px 14px;
+}
+a.product-link:hover{background:#fbe9d6}
+@media (prefers-color-scheme:dark){
+  a.product-link{color:#f0a26b;background:#1c1f26;border-color:#5c4132}
+  a.product-link:hover{background:#3a2d20}
+}
+@media (prefers-color-scheme:dark){
+  .status-box{background:#2a2018;border-color:#5c4132}
+  .status-head{border-bottom-color:#5c4132}
+  .status-head svg{color:#f0a26b}
+  .status-rows li{border-top-color:#3a2d20}
+  .status-rows .k{color:#f0a26b}
+  .status-badge{background:#c05a2f}
+}
+.sec-head{
+  display:flex;align-items:center;gap:12px;margin:0 0 20px;
+  padding-bottom:12px;border-bottom:2px solid var(--line);
+}
+.sec-head h2{font-size:clamp(20px,4.4vw,26px);font-weight:900;letter-spacing:-.01em}
+.sec-head .sub{margin-left:auto;font-size:13px;color:var(--ink-soft);text-align:right}
+/* day cards */
+.day{border:1px solid var(--line);border-radius:18px;background:var(--card);
+  margin:0 0 22px;overflow:hidden;box-shadow:var(--shadow)}
+.day-head{display:flex;align-items:center;gap:14px;padding:18px 20px;color:#fff;background:var(--dc)}
+.day-head .n{
+  width:52px;height:52px;flex:0 0 auto;border-radius:14px;background:rgba(255,255,255,.18);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;
+}
+.day-head .n b{font-size:22px}
+.day-head .n span{font-size:11px;opacity:.9}
+.day-head h3{font-size:18px}
+.day-head .route-line{font-size:13px;opacity:.92;margin-top:2px}
+.day1{--dc:var(--day1)} .day2{--dc:var(--day2)} .day3{--dc:var(--day3)} .day4{--dc:var(--day4)}
+.day4 .day-head, .day4 .day4-text{--dc:#8a5d1c}
+@media (prefers-color-scheme:dark){.day4 .day-head, .day4 .day4-text{--dc:#7a5b2e}}
+ul.rows{list-style:none;margin:0;padding:6px 0}
+.rows li{
+  display:grid;grid-template-columns:86px 1fr;gap:6px 14px;
+  padding:13px 20px;border-top:1px solid var(--line);
+}
+.rows li:first-child{border-top:0}
+.rows .t{font-weight:700;font-size:14px;color:var(--dc);white-space:nowrap}
+.rows .what{font-weight:500}
+.rows .what small{display:block;font-weight:400;color:var(--ink-soft);font-size:13px;margin-top:2px}
+.tag{
+  display:inline-block;font-size:11.5px;font-weight:700;border-radius:6px;
+  padding:2px 8px;margin:3px 4px 0 0;vertical-align:middle;
+  background:var(--chip);color:var(--ink-soft);border:1px solid var(--line);
+}
+.tag.free{color:#b3541e;border-color:#e8c39a;background:#fdf3e7}
+.tag.inc{color:#2b7a4d;border-color:#a9d3ba;background:#eef8f1}
+.tag.cash{color:#fff;border-color:#b3541e;background:#c2410c;font-weight:900}
+.cash-note{color:#b3541e;font-weight:900}
+@media (prefers-color-scheme:dark){
+  .tag.free{color:#f0a26b;border-color:#5c4132;background:#2a2018}
+  .tag.inc{color:#8fd4a9;border-color:#2f4a3b;background:#1a2a22}
+  .tag.cash{color:#fff;border-color:#e0651f;background:#b34700}
+  .cash-note{color:#f0a26b}
+}
+/* map */
+#map-wrap{position:relative}
+#map{height:420px;border-radius:16px;border:1px solid var(--line);overflow:hidden;background:var(--bg-soft)}
+#map.unavailable{display:none}
+.map-note{
+  display:none;margin-top:10px;font-size:13.5px;color:var(--ink-soft);
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:12px 16px;
+}
+.pin{
+  width:30px;height:30px;border-radius:50%;background:var(--pin,#556);
+  border:2.5px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.35);
+  color:#fff;font:700 13px/26px "Noto Sans KR",sans-serif;text-align:center;cursor:pointer;
+}
+.pin--on{outline:3px solid currentColor;background:var(--pin,#556)}
+
+.pin.selected{box-shadow:0 0 0 3px rgba(255,255,255,.9),0 0 0 6px var(--pin,#556)}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.legend button{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  border:1px solid var(--line);background:var(--card);color:var(--ink);
+  border-radius:999px;padding:8px 15px;font-size:14px;font-family:inherit;font-weight:500;
+}
+.legend button i{width:13px;height:13px;border-radius:50%;background:var(--c);flex:0 0 auto}
+.legend button .cnt{font-size:12px;color:var(--ink-soft)}
+.legend button[aria-pressed="true"]{border-color:var(--c);box-shadow:inset 0 0 0 1px var(--c)}
+.legend button.all[aria-pressed="true"]{border-color:var(--ink-soft)}
+#place-detail{
+  display:none;margin-top:14px;border:1px solid var(--line);border-radius:14px;
+  padding:16px 18px;background:var(--card);gap:10px;align-items:flex-start;
+}
+#place-detail.show{display:flex}
+#place-detail .dot{
+  width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:var(--pin,#556);
+  color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;
+}
+#place-detail h4{margin:0;font-size:16px}
+#place-detail .meta{font-size:13px;color:var(--ink-soft);margin-top:2px}
+#place-detail a.maps{display:inline-block;margin-top:8px;font-size:13.5px;font-weight:500}
+#place-detail .x{
+  margin-left:auto;background:none;border:0;cursor:pointer;color:var(--ink-soft);
+  font-size:20px;line-height:1;padding:2px 6px;
+}
+.placegroup{margin-top:26px}
+.placegroup h3{font-size:15px;font-weight:900;margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.placegroup h3 i{width:12px;height:12px;border-radius:50%;background:var(--c)}
+.placegroup h3 .d{color:var(--ink-soft);font-weight:500;font-size:13px}
+ol.places{list-style:none;margin:0 0 6px;padding:0}
+ol.places li{
+  display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;
+  border:1px solid transparent;cursor:pointer;
+}
+ol.places li+li{border-top:1px solid var(--line);border-radius:0 0 12px 12px}
+ol.places li .num{
+  width:26px;height:26px;flex:0 0 auto;border-radius:50%;background:var(--pin);
+  color:#fff;font-weight:700;font-size:12px;display:flex;align-items:center;justify-content:center;
+}
+ol.places li .nm{font-weight:500}
+ol.places li .cat{font-size:12px;color:var(--ink-soft);display:block}
+ol.places li .lnk{
+  margin-left:auto;font-size:12.5px;color:var(--ink-soft);text-decoration:none;flex:0 0 auto;
+  border:1px solid var(--line);border-radius:8px;padding:4px 10px;background:var(--card);
+}
+ol.places li:hover{background:var(--bg-soft)}
+ol.places li.map-selected{background:var(--chip);border-color:var(--line)}
+/* restaurants */
+.rest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.rest{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px}
+.rest h3{font-size:16px;margin:0 0 4px}
+.rest .city{font-size:12.5px;color:var(--ink-soft);margin-bottom:8px}
+.rest ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink)}
+.rest li{margin:3px 0}
+.rest .warn{color:var(--ink-soft);font-size:12px}
+.rest p.warn{margin:10px 0 0}
+.rest .payline{
+  margin-top:12px;font-size:13px;line-height:1.6;background:var(--bg-soft);
+  border:1px solid var(--line);border-radius:10px;padding:9px 12px;
+}
+.rest .payline.no-card{border-color:#e8c39a;background:#fdf3e7}
+.rest .payline.no-card b{color:#b3541e}
+@media (prefers-color-scheme:dark){
+  .rest .payline.no-card{border-color:#5c4132;background:#2a2018}
+  .rest .payline.no-card b{color:#f0a26b}
+}
+/* shopping tax-free */
+.shop-intro{
+  margin:0 0 22px;font-size:14.5px;color:var(--ink);line-height:1.7;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+}
+.shop-intro b{color:var(--accent)}
+.shop-subh{
+  font-size:17px;font-weight:900;margin:28px 0 14px;display:flex;align-items:center;gap:10px;
+}
+.shop-subh .no{
+  display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;flex:0 0 auto;
+  border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:900;
+}
+@media (prefers-color-scheme:dark){ .shop-subh .no{color:#14161b} }
+.shop-subh:first-of-type{margin-top:0}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.compare{grid-template-columns:1fr}}
+.cmp{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px}
+.cmp.old{opacity:.92}
+.cmp.new{border-color:var(--accent);background:#eef7f2}
+@media (prefers-color-scheme:dark){.cmp.new{background:#16251f}}
+.cmp h4{margin:0 0 10px;font-size:14px;font-weight:900;display:flex;align-items:center;gap:8px}
+.cmp h4 .badge{
+  font-size:11px;font-weight:700;border-radius:999px;padding:3px 9px;border:1px solid var(--line);
+  background:var(--chip);color:var(--ink-soft);
+}
+.cmp.new h4 .badge{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){.cmp.new h4 .badge{color:#14161b}}
+.cmp ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.65}
+.cmp li{margin:5px 0}
+.cmp li.dim{color:var(--ink-soft)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:820px){.steps{grid-template-columns:1fr}}
+.step-card{
+  border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px;position:relative;
+  overflow:hidden;
+}
+.step-card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);
+}
+.step-num{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:900;color:var(--accent);
+  letter-spacing:.02em;margin-bottom:8px;
+}
+.step-num .dotn{
+  width:26px;height:26px;border-radius:50%;background:var(--accent);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;
+}
+@media (prefers-color-scheme:dark){.step-num .dotn{color:#14161b}}
+.step-card h4{margin:0 0 8px;font-size:15.5px;font-weight:900}
+.step-card ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.65}
+.step-card li{margin:5px 0}
+.step-card .where{margin-top:10px;font-size:12.5px;color:var(--ink-soft);border-top:1px dashed var(--line);padding-top:8px}
+.key-order{
+  margin-top:14px;border:1.5px solid #e8c39a;border-radius:14px;background:#fdf3e7;
+  padding:16px 18px;display:flex;gap:14px;align-items:flex-start;
+}
+.key-order svg{width:22px;height:22px;flex:0 0 auto;color:#b3541e;margin-top:2px}
+.key-order b{color:#b3541e}
+.key-order p{margin:0;font-size:14.5px;line-height:1.65}
+.key-order .seq{font-weight:900}
+@media (prefers-color-scheme:dark){
+  .key-order{background:#2a2018;border-color:#5c4132}
+  .key-order svg,.key-order b{color:#f0a26b}
+}
+.store-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.store{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px}
+.store h4{margin:0 0 2px;font-size:16px;font-weight:900}
+.store .when{font-size:12.5px;color:var(--ink-soft);margin-bottom:10px}
+.store .meta-line{font-size:13.5px;margin:6px 0;display:flex;gap:8px;align-items:flex-start}
+.store .meta-line .k{
+  flex:0 0 auto;font-size:11.5px;font-weight:900;border-radius:6px;padding:2px 8px;
+  background:var(--chip);border:1px solid var(--line);color:var(--ink-soft);margin-top:1px;white-space:nowrap;
+}
+.store ul{margin:10px 0 0;padding-left:18px;font-size:13.5px;line-height:1.65}
+.store li{margin:4px 0}
+.store .tip{
+  margin-top:12px;font-size:13px;line-height:1.6;background:var(--bg-soft);
+  border:1px solid var(--line);border-radius:10px;padding:10px 12px;
+}
+ul.shop-cautions{list-style:none;margin:0;padding:0}
+ul.shop-cautions li{
+  display:flex;gap:12px;align-items:flex-start;padding:13px 16px;margin-bottom:10px;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;font-size:14px;line-height:1.65;
+}
+ul.shop-cautions svg{width:18px;height:18px;flex:0 0 auto;margin-top:3px;color:var(--day1)}
+.shop-source{margin-top:12px;font-size:12px;color:var(--ink-soft)}
+/* souvenir shopping list */
+.gift-intro{
+  margin:0 0 20px;font-size:14.5px;line-height:1.7;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+}
+.gift-intro b{color:var(--accent)}
+.gift-total{
+  display:grid;grid-template-columns:1fr auto;gap:8px 18px;align-items:baseline;
+  border:1.5px solid var(--accent);background:#eef7f2;border-radius:16px;padding:18px;
+  margin:0 0 22px;
+}
+@media (prefers-color-scheme:dark){.gift-total{background:#16251f}}
+.gift-total h3{font-size:16px;font-weight:900;margin:0}
+.gift-total .grand{font-size:22px;font-weight:900;color:var(--accent);white-space:nowrap}
+.gift-total .sub{grid-column:1/-1;font-size:13px;color:var(--ink-soft)}
+.gift-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:760px){.gift-grid{grid-template-columns:1fr}}
+.gift-card{border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden}
+.gift-card-h{padding:14px 16px 10px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline;border-bottom:1px solid var(--line);background:var(--bg-soft)}
+.gift-card-h h4{font-size:15px;font-weight:900;margin:0}
+.gift-card-h .who{font-size:12px;font-weight:700;border-radius:999px;padding:3px 9px;background:var(--card);border:1px solid var(--line);color:var(--ink-soft)}
+.gift-card-h .amt{margin-left:auto;font-weight:900;font-size:14px;color:var(--accent);white-space:nowrap}
+.gift-table{width:100%;border-collapse:collapse;font-size:13.5px;line-height:1.5}
+.gift-table th,.gift-table td{padding:9px 12px;text-align:left;border-top:1px solid var(--line)}
+.gift-table thead th{border-top:0;font-size:11px;letter-spacing:.05em;color:var(--ink-soft);font-weight:900}
+.gift-table th.p,.gift-table td.p{text-align:right;white-space:nowrap;width:88px}
+.buy{display:inline-block;font-size:11px;font-weight:900;border-radius:999px;padding:2px 8px;background:var(--chip);border:1px solid var(--line);color:var(--ink-soft)}
+.buy.air{background:#e9f1fb;border-color:#b9d2ef;color:#2568b8}
+@media (prefers-color-scheme:dark){.buy.air{background:#182838;border-color:#2e4d73;color:#8fc1f5}}
+.gift-table td small{display:block;color:var(--ink-soft);font-size:12px;margin-top:1px}
+.product-cell{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.product-thumb{
+  width:64px;height:64px;object-fit:contain;background:#fff;
+  border:1px solid var(--line);border-radius:9px;padding:3px;
+}
+.product-meta{min-width:0;line-height:1.5}
+.product-name{overflow-wrap:break-word}
+.product-meta .buy{margin-top:3px}
+.gift-table tr.group-row td{
+  padding:10px 12px 7px;background:var(--bg-soft);font-size:12px;font-weight:900;color:var(--accent);
+  letter-spacing:.01em;
+}
+.gift-table tr.total-row td{font-weight:900;background:var(--bg-soft)}
+.gift-note{padding:10px 16px 14px;font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+.gift-note b{color:var(--ink)}
+.gift-summary{width:100%;border-collapse:collapse;margin:14px 0 0;font-size:13.5px}
+.gift-summary th,.gift-summary td{padding:10px 12px;border-top:1px solid var(--line);text-align:left}
+.gift-summary th{font-size:11px;letter-spacing:.05em;color:var(--ink-soft);font-weight:900}
+.gift-summary th.p,.gift-summary td.p{text-align:right;white-space:nowrap}
+.gift-summary tr:last-child td{font-weight:900;background:var(--bg-soft)}
+.gift-tips{margin-top:16px;border:1px solid #e8c39a;background:#fdf3e7;border-radius:14px;padding:16px 18px;font-size:13.5px;line-height:1.65}
+.gift-tips h4{margin:0 0 8px;font-size:14px;font-weight:900;color:#b3541e}
+.gift-tips ul{margin:0;padding-left:18px}
+.gift-tips li{margin:5px 0}
+@media (prefers-color-scheme:dark){
+  .gift-tips{background:#2a2018;border-color:#5c4132}
+  .gift-tips h4{color:#f0a26b}
+}
+/* donki floor route */
+.floor-route{margin-top:22px;border:1px solid var(--line);border-radius:16px;background:var(--card);padding:18px}
+.floor-route h3{font-size:16px;font-weight:900;margin:0 0 4px}
+.floor-route .fr-sub{font-size:13px;color:var(--ink-soft);margin:0 0 16px}
+ol.fr-steps{list-style:none;margin:0;padding:0}
+.fr-step{display:flex;gap:12px;align-items:flex-start;position:relative;padding:0 0 12px}
+.fr-step:last-child{padding-bottom:0}
+.fr-step::before{
+  content:"";position:absolute;left:21px;top:46px;bottom:-2px;width:2px;background:var(--line);
+}
+.fr-step:last-child::before{display:none}
+.fr-floor{
+  width:44px;height:44px;flex:0 0 auto;border-radius:50%;position:relative;z-index:1;
+  background:var(--accent);color:#fff;font-weight:900;font-size:14px;
+  display:flex;align-items:center;justify-content:center;
+}
+@media (prefers-color-scheme:dark){.fr-floor{color:#14161b}}
+.fr-step.pass .fr-floor{background:var(--chip);color:var(--ink-soft);border:1px solid var(--line)}
+.fr-body{
+  flex:1;min-width:0;background:var(--bg-soft);border:1px solid var(--line);
+  border-radius:12px;padding:11px 14px;
+}
+.fr-body h4{margin:0 0 5px;font-size:14px;font-weight:900}
+.fr-body ul{margin:0;padding-left:17px;font-size:13.5px;line-height:1.6}
+.fr-body ul li{margin:2px 0}
+.fr-body p{margin:0;font-size:13.5px;line-height:1.6}
+.fr-tip{margin:14px 0 0;font-size:13.5px;line-height:1.65}
+.fr-tip b{color:var(--accent)}
+.fr-note{margin:5px 0 0;font-size:12px;color:var(--ink-soft)}
+/* prep checklist */
+ul.prep{list-style:none;margin:0;padding:0}
+ul.prep li{
+  display:flex;gap:13px;align-items:flex-start;padding:14px 16px;margin-bottom:10px;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;
+}
+ul.prep input[type="checkbox"]{
+  width:21px;height:21px;flex:0 0 auto;margin:2px 0 0;
+  accent-color:var(--accent);cursor:pointer;
+}
+ul.prep .body{flex:1;min-width:0}
+ul.prep .ttl{font-weight:700;font-size:15.5px}
+ul.prep .desc{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:2px;line-height:1.55}
+ul.prep li.done .ttl{text-decoration:line-through;color:var(--ink-soft)}
+ul.prep li.done{opacity:.72}
+.prep-count{font-variant-numeric:tabular-nums}
+/* notes */
+ul.notes{list-style:none;margin:0;padding:0}
+ul.notes li{
+  display:flex;gap:12px;align-items:flex-start;padding:14px 16px;margin-bottom:10px;
+  background:var(--bg-soft);border:1px solid var(--line);border-radius:14px;
+}
+ul.notes svg{width:18px;height:18px;flex:0 0 auto;margin-top:3px;color:var(--day4)}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-soft)}
+footer p{margin:4px 0}
+@media (max-width:640px){
+  .wrap{padding:0 16px 64px}
+  #map{height:330px}
+  .rows li{grid-template-columns:72px 1fr;padding:12px 16px;gap:4px 10px}
+  .sec-head .sub{display:none}
+  nav.jump .bar{padding:8px 12px}
+  .gift-table th,.gift-table td{padding:8px 9px}
+  .gift-table th.p,.gift-table td.p{width:auto}
+  .product-thumb{width:56px;height:56px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none !important}
+}
+</style>
+</head>
+<body>
+
+<nav class="jump" aria-label="페이지 이동">
+  <div class="bar">
+    <a href="#prep">출국 준비</a>
+    <a href="#day1" class="d1"><b>1</b>일차</a>
+    <a href="#day2" class="d2"><b>2</b>일차</a>
+    <a href="#day3" class="d3"><b>3</b>일차</a>
+    <a href="#day4" class="d4"><b>4</b>일차</a>
+    <a href="#map-sec">지도</a>
+    <a href="#restaurants">식당 정보</a>
+    <a href="#shopping">쇼핑·면세</a>
+    <a href="#atm">ATM 인출</a>
+    <a href="#gift-list">쇼핑리스트</a>
+    <a href="#notes">유의사항</a>
+  </div>
+</nav>
+
+<div class="wrap">
+<header class="trip">
+  <div class="route">
+    <h1>오사카 3박 4일 여행 일정표</h1>
+    <span class="kicker">정연 · 남편 · 딸 — 2026년 11월 19일(목) ~ 11월 22일(일)</span>
+  </div>
+  <div class="meta-flags">
+    <span class="flag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+      출국 <b>7C1327</b> <span class="sub">13:55 김포 → 15:40 간사이</span>
+    </span>
+    <span class="flag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+      귀국 <b>7C1326</b> <span class="sub">11:00 간사이 → 12:55 김포</span>
+    </span>
+  </div>
+  <p class="pack">참좋은여행 · 상품번호 JPP6610-2611197C · 제주항공 이용 패키지</p>
+</header>
+
+<!-- ================= 예약·요금 현황 ================= -->
+<section class="status-box" aria-labelledby="status-h">
+  <div class="status-head">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <h2 id="status-h">예약·요금 현황 <span style="font-size:13px;font-weight:500;color:var(--ink-soft)">(2026-10-09 기준)</span></h2>
+    <span class="status-badge">출발 확정 ✅</span>
+  </div>
+  <ul class="status-rows">
+    <li><span class="k">출발</span><div class="v"><b>출발 확정 ✅</b> — 현재예약 15명 / 최소출발 15명</div></li>
+    <li><span class="k">요금</span><div class="v"><b>1인 999,000원</b> (유류할증료 127,000원 포함) · 중2 자녀도 성인 요금</div></li>
+    <li><span class="k">예약금</span><div class="v"><b>60만원 결제 완료</b> — 1인 20만원 × 3인 (2026-10-11)</div></li>
+    <li><span class="k">호텔</span><div class="v">2일차 이비스 버젯 우메다 · 3일차 파인빌라 — 출발 3일 전 최종 안내이며 변경 가능</div></li>
+    <li><span class="k">상품</span><div class="v"><a class="product-link" href="https://vgt.kr/p/JPP6610-2611197C/1" target="_blank" rel="noopener">참좋은여행 상품 페이지 (JPP6610-2611197C) ↗</a></div></li>
+  </ul>
+</section>
+
+<!-- ================= 출국 전 준비 체크리스트 ================= -->
+<section id="prep" aria-labelledby="prep-h">
+  <div class="sec-head">
+    <h2 id="prep-h">출국 전 준비 체크리스트</h2>
+    <span class="sub prep-count" id="prep-count">0 / 6 완료</span>
+  </div>
+  <ul class="prep">
+    <li>
+      <input type="checkbox" id="prep-1" aria-label="비짓재팬웹 등록 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-1">비짓재팬웹(Visit Japan Web) 등록</label>
+        <span class="desc">일본 입국심사·세관신고 QR을 미리 등록해 두면 공항에서 시간을 아낄 수 있어요. 3명분 등록하고, 딸은 동반가족으로 함께 등록하면 됩니다.</span>
+        <span class="tag">출발 직전까지 완료</span>
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="prep-2" aria-label="돼지코 어댑터 챙기기 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-2">돼지코 어댑터 2~3개 챙기기</label>
+        <span class="desc">일본은 100V 납작 2핀 콘센트라 한국 충전기가 그대로 들어가지 않아요.</span>
+        <span class="tag">짐 쌀 때</span>
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="prep-3" aria-label="제주항공 온라인 체크인 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-3">제주항공 온라인 체크인</label>
+        <span class="desc">출발 48시간 전부터 가능해요. 모바일 탑승권을 미리 발급받아 두면 공항에서 편합니다.</span>
+        <span class="tag">11/17(화) 13:55부터</span>
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="prep-4" aria-label="여권 유효기간 확인 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-4">여권 3명분 유효기간 확인</label>
+        <span class="desc">재발급에는 1~2주가 걸리니 늦지 않게 확인하세요.</span>
+        <span class="tag">이번 주 안에</span>
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="prep-5" aria-label="eSIM 구매 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-5">eSIM 구매</label>
+        <span class="desc">1순위는 Ubigi 일본 5GB/15일. 세 명 모두 eSIM 사용 가능합니다.</span>
+        <span class="tag">11/12 전후</span>
+      </div>
+    </li>
+    <li>
+      <input type="checkbox" id="prep-6" aria-label="트래블로그 엔화 충전 완료" />
+      <div class="body">
+        <label class="ttl" for="prep-6">트래블로그 엔화 충전</label>
+        <span class="desc">출발 전에 미리 충전해 두세요. 현금 전용인 타코야키 탄지로 같은 곳은 세븐일레븐 ATM에서 인출하면 됩니다.</span>
+        <span class="tag">출발 전</span>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<!-- ================= 일정표 ================= -->
+<section aria-labelledby="sched-h">
+  <div class="sec-head">
+    <h2 id="sched-h">일자별 일정표</h2>
+    <span class="sub">지도의 핀 색상은 날짜별 색상과 같습니다</span>
+  </div>
+
+  <article class="day day1" id="day1">
+    <div class="day-head">
+      <div class="n"><b>1</b><span>일차</span></div>
+      <div>
+        <h3>11월 19일(목) · 오사카 도착 → 우메다</h3>
+        <div class="route-line">김포 → 간사이 → 오사카성 → 우메다 자유식·쇼핑</div>
+      </div>
+    </div>
+    <ul class="rows">
+      <li><span class="t">11:00</span><div class="what">김포국제공항 가이드 미팅</div></li>
+      <li><span class="t">13:55 ~</span><div class="what">7C1327 김포 출발 → 15:40 간사이국제공항 도착<small>제주항공 · 약 1시간 45분 소요</small></div></li>
+      <li><span class="t">오후</span><div class="what">오사카성 관광<small>천수각 내부는 제외</small></div></li>
+      <li><span class="t">저녁</span><div class="what">애니메이트 우메다점 <span class="tag">폐점 21:00</span>
+        <small>21시에 문을 닫아 저녁 동선에서 가장 먼저 — NU茶屋町 3층 (11:00~21:00) · 지도 ⑥번</small>
+      </div></li>
+      <li><span class="t">저녁</span><div class="what">석식: 니쿠지루 교자노 단다단 오사카 우메다점 <span class="tag">목 23:00까지</span>
+        <span class="tag free">1,000엔 지급</span>
+        <small>교자 · 목요일은 23:00까지 영업이라 애니메이트 다음 순서로도 여유 있음 · 지도 ⑤번 (대안: 스시로 우메다 차야마치점 ④번)</small>
+      </div></li>
+      <li><span class="t">밤</span><div class="what">돈키호테 우메다본점 <span class="tag">24시간 영업</span>
+        <small>숙소 도보권 · 지도 ⑦번</small>
+      </div></li>
+      <li><span class="t">밤</span><div class="what">밤 간식 후보: 타코야키 탄지로 (たこ焼き鍛次郎) <span class="tag cash">현금 전용</span>
+        <small>돈키호테 우메다본점 바로 옆 (키타구 코마츠바라초 5-2) · 목요일 17:00–24:00 (타베로그 기준) · <b class="cash-note">현금 전용(카드·전자결제 불가)</b> · 5개 400엔 / 8개 550엔 (리뷰 기준) · 딸이 좋아하는 타코야키로 밤 간식 1순위</small>
+      </div></li>
+      <li><span class="t">밤</span><div class="what">숙박: 이비스 버젯 오사카 우메다 <span class="tag">③번</span></div></li>
+    </ul>
+  </article>
+
+  <article class="day day2" id="day2">
+    <div class="day-head">
+      <div class="n"><b>2</b><span>일차</span></div>
+      <div>
+        <h3>11월 20일(금) · 고베 → 신사이바시·도톤보리</h3>
+        <div class="route-line">기타노 이진칸 → 메리켄파크 → 하버랜드 모자이크 → 중식 → 신사이바시·도톤보리</div>
+      </div>
+    </div>
+    <ul class="rows">
+      <li><span class="t">오전</span><div class="what">기타노 이진칸거리 관광<small>⑧번 · 고베 이국적인 서양식 주택가</small></div></li>
+      <li><span class="t">오전</span><div class="what">메리켄파크 → 고베 하버랜드 모자이크<small>⑪⑫번 · 항구 전망 · 쇼핑·산책</small></div></li>
+      <li><span class="t">점심</span><div class="what">중식 자유식
+        <span class="tag free">1,000엔 지급</span>
+        <small>고베에 있을 가능성이 커 고베 두 곳을 1순위로, 도톤보리 자유시간이 나오면 대체</small>
+        <small>· 고베: 우오신 스시 산노미야점 / 고베규 라멘 야자와 (⑨⑩번)<br>· 도톤보리: 대기수산 회전초밥 / 규카츠 모토무라 난바점 (⑮⑯번)</small>
+      </div></li>
+      <li><span class="t">오후</span><div class="what">신사이바시 · 도톤보리 자유시간
+        <small>GU 신사이바시점 (11:00~21:00) ⑬번 · 도톤보리 ⑭번 · 쇼핑은 GU만 (돈키호테는 1일차 우메다본점 이용)</small>
+        <small>길거리 간식 후보 — · 551호라이(551蓬莱) 돼지만두: 도톤보리 본점 (난바 3-6-3), 개당 약 170엔, 테이크아웃 가능, 11:00~21:30 · DANGO 道頓堀店: 도톤보리 1-7-3 (딸이 좋아하는 당고) — 영업시간 월~금 12:30~21:00 / 토~일 11:30~21:00, 구글 평점 4.7점 (리뷰 22개). 2일차는 금요일이라 12:30부터 영업 — 551호라이(11:00~21:30)와 같은 날 묶기 좋아요 · 메뉴·가격은 Google Maps에 표시되지 않아 미확인</small>
+      </div></li>
+      <li><span class="t">저녁</span><div class="what">석식: 창코나베 <span class="tag inc">일정 포함</span></div></li>
+      <li><span class="t">밤</span><div class="what">숙박: 이비스 버젯 오사카 우메다</div></li>
+    </ul>
+  </article>
+
+  <article class="day day3" id="day3">
+    <div class="day-head">
+      <div class="n"><b>3</b><span>일차</span></div>
+      <div>
+        <h3>11월 21일(토) · 교토 → 나라 → 간사이공항 인근</h3>
+        <div class="route-line">청수사 → 산넨자카·니넨자카 → 야사카신사 → 동대사·사슴공원 → 숙소 이동</div>
+      </div>
+    </div>
+    <ul class="rows">
+      <li><span class="t">오전</span><div class="what">교토: 청수사 → 산넨자카·니넨자카 → 야사카신사<small>⑰⑱번 · 사찰·신사 거리 산책</small></div></li>
+      <li><span class="t">점심</span><div class="what">중식: 함바그정식 <span class="tag inc">일정 포함</span></div></li>
+      <li><span class="t">오후</span><div class="what">나라: 동대사 → 사슴공원<small>⑲번 · 대불·사슴 먹이주기 체험</small></div></li>
+      <li><span class="t">저녁</span><div class="what">석식: 일정식 <span class="tag inc">일정 포함</span></div></li>
+      <li><span class="t">밤</span><div class="what">숙박 이동: Kansai Airport Hotel Pine Villa <small>⑳번 · 간사이공항 남동쪽 약 8km, 이즈미사노시</small></div></li>
+    </ul>
+  </article>
+
+  <article class="day day4" id="day4">
+    <div class="day-head">
+      <div class="n"><b>4</b><span>일차</span></div>
+      <div>
+        <h3>11월 22일(일) · 귀국</h3>
+        <div class="route-line">호텔 → 간사이국제공항 → 김포</div>
+      </div>
+    </div>
+    <ul class="rows">
+      <li><span class="t">오전</span><div class="what">호텔 체크아웃 → 간사이국제공항 이동</div></li>
+      <li><span class="t">11:00 ~</span><div class="what">7C1326 간사이 출발 → 12:55 김포 도착<small>제주항공 · 귀국</small></div></li>
+    </ul>
+  </article>
+</section>
+
+<!-- ================= 지도 ================= -->
+<section id="map-sec" aria-labelledby="map-h">
+  <div class="sec-head">
+    <h2 id="map-h">지도 · 20개 장소</h2>
+    <span class="sub">핀을 눌러 상세 보기 · 일자별 필터 가능</span>
+  </div>
+  <div class="legend" role="group" aria-label="일자별 필터">
+    <button class="all" data-day="0" aria-pressed="true" style="--c:var(--ink-soft)"><i></i>전체 <span class="cnt">20곳</span></button>
+    <button data-day="1" aria-pressed="false" style="--c:var(--day1)"><i></i>1일차 <span class="cnt">7곳</span></button>
+    <button data-day="2" aria-pressed="false" style="--c:var(--day2)"><i></i>2일차 <span class="cnt">9곳</span></button>
+    <button data-day="3" aria-pressed="false" style="--c:var(--day3)"><i></i>3일차 <span class="cnt">4곳</span></button>
+  </div>
+  <div id="map-wrap"><div id="map" role="application" aria-label="여행 장소 지도"></div></div>
+  <div class="map-note" id="map-note">지도를 불러올 수 없어 장소 목록만 표시합니다. 각 장소의 ‘지도’ 버튼을 눌러 위치를 확인해 주세요.</div>
+  <div id="place-detail" aria-live="polite">
+    <div class="dot"></div>
+    <div style="min-width:0">
+      <h4></h4>
+      <div class="meta"></div>
+      <a class="maps" href="#" target="_blank" rel="noopener">구글 지도에서 위치 보기 ↗</a>
+    </div>
+    <button class="x" aria-label="닫기">×</button>
+  </div>
+  <div id="place-groups"></div>
+</section>
+
+<!-- ================= 식당 정보 ================= -->
+<section id="restaurants" aria-labelledby="rest-h">
+  <div class="sec-head">
+    <h2 id="rest-h">자유식 식당 상세</h2>
+    <span class="sub">영업시간·가격은 출발 전 재확인</span>
+  </div>
+  <div class="rest-grid">
+    <div class="rest">
+      <h3>우오신 스시 산노미야점</h3>
+      <div class="city">고베 · ⑨번 · <b>2일차 중식 유력</b> · 원조 붓치기리 스시</div>
+      <ul>
+        <li>주소: 兵庫県神戸市中央区北長狭通1-4-2</li>
+        <li>영업시간: 매일 11:30 ~ 23:00 (L.O. 22:30) · 연중무휴</li>
+        <li>런치 메뉴 (금요일 점심 해당 · 세금 포함, 적출 포함): 붓치기리 정식 1,000엔 · 특선 붓치기리 정식 1,500엔 · 만복정식 950엔 · 해물덮밥 1,200엔</li>
+        <li>QR코드로 한글 메뉴 확인 가능</li>
+        <li><b>3인 예상 금액: 약 3,000~4,500엔</b> (런치 정식 기준)</li>
+        <li>핫페퍼 쿠폰으로 음식대 5% OFF 가능 (런치·세트 제외)</li>
+      </ul>
+      <div class="payline"><b>결제:</b> 신용카드 가능 (VISA·마스터·아멕스·DINERS·JCB·은련)</div>
+      <p class="warn">3인 예상 금액은 2026년 리뷰·메뉴 기준 추정치입니다.</p>
+    </div>
+    <div class="rest">
+      <h3>고베규 라멘 야자와</h3>
+      <div class="city">고베 · ⑩번 · 2일차 중식 후보</div>
+      <ul>
+        <li>고베규 라멘 세트 1,980엔 (고베규 차슈·초밥·힘줄조림 포함)</li>
+        <li>점심 영업: 11:00 ~ 17:00</li>
+        <li><b>3인 예상 금액: 약 6,000엔</b> (고베규 라멘 세트 1,980엔 × 3)</li>
+      </ul>
+      <p class="warn">금액은 2026년 리뷰·블로그·공식 메뉴를 바탕으로 한 추정치입니다.</p>
+    </div>
+    <div class="rest">
+      <h3>스시로 우메다 차야마치점</h3>
+      <div class="city">오사카 우메다 · ④번 · 1일차 석식 후보</div>
+      <ul>
+        <li>회전초밥 · 태블릿 한글 지원</li>
+        <li>애니메이트 우메다점과 도보 2분 거리</li>
+        <li><b>3인 예상 금액: 약 5,000~6,000엔</b> (1인 1,500~2,000엔 · 도시형 점포 접시 150엔부터)</li>
+      </ul>
+      <p class="warn">금액은 2026년 리뷰·블로그·공식 메뉴를 바탕으로 한 추정치입니다.</p>
+    </div>
+    <div class="rest">
+      <h3>니쿠지루 교자노 단다단 오사카 우메다점</h3>
+      <div class="city">오사카 우메다 · ⑤번 · <b>1일차 석식 유력</b></div>
+      <ul>
+        <li>육즙 교자 전문 이자카야 — 교자 6개 551엔(세금 포함)</li>
+        <li>단품 500엔대~1,000엔대 · 생맥주·하이볼 있음 · 오토오시(테이블 차지) 없음</li>
+        <li>영업시간: 수~토 11:30 ~ 23:00 · 일~화 11:30 ~ 22:00 (1일차 목요일 저녁 방문 가능)</li>
+        <li><b>3인 예상 금액: 약 6,000~9,000엔</b> (1인 2,000~3,000엔)</li>
+      </ul>
+      <div class="payline"><b>결제방법:</b> <b>신용카드 가능</b> (VISA·마스터·JCB, 2026년 9월 블로그 기준)</div>
+      <p class="warn">3인 예상 금액은 2026년 리뷰·메뉴 기준 추정치입니다.</p>
+    </div>
+    <div class="rest">
+      <h3>대기수산 회전초밥 도톤보리점</h3>
+      <div class="city">오사카 도톤보리 · ⑮번 · <b>2일차 중식 유력</b></div>
+      <ul>
+        <li>영업시간: 11:00 ~ 22:30</li>
+        <li>접시 100엔~590엔 (8단계 가격) · 태블릿 주문 + 회전 레일 · 한국어 키오스크 지원</li>
+        <li><b>3인 예상 금액: 약 7,500~10,500엔</b> (2026년 후기 실측: 3인 22접시 10,362엔)</li>
+        <li>오사카 주유패스 소지 시 도톤보리점 10% 할인 (후기 기준, 방문 시 확인)</li>
+        <li class="warn">도톤보리 실제 자유시간 여부는 가이드 확인 필요</li>
+      </ul>
+      <div class="payline"><b>결제:</b> 신용카드 가능 (체인 기준 VISA·JCB·AMEX·Diners) · 전자화폐 불가</div>
+      <p class="warn">3인 예상 금액은 2026년 리뷰·메뉴 기준 추정치입니다.</p>
+    </div>
+    <div class="rest">
+      <h3>규카츠 모토무라 난바점</h3>
+      <div class="city">오사카 난바 · ⑯번 · 2일차 중식 후보</div>
+      <ul>
+        <li>130g 2,110엔 (2025년 기준)</li>
+        <li>1,000엔 지원금 초과분은 추가금 발생</li>
+        <li><b>3인 예상 금액: 약 5,800엔</b> (규카츠 정식 1,930엔 × 3)</li>
+        <li class="warn">도톤보리 실제 자유시간 여부는 가이드 확인 필요</li>
+      </ul>
+      <p class="warn">금액은 2026년 리뷰·블로그·공식 메뉴를 바탕으로 한 추정치입니다.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 쇼핑·면세 체크리스트 ================= -->
+<section id="shopping" aria-labelledby="shopping-h">
+  <div class="sec-head">
+    <h2 id="shopping-h">점포별 쇼핑 체크리스트 · 새 면세 제도</h2>
+    <span class="sub">2026년 11월 1일부터 적용</span>
+  </div>
+
+  <p class="shop-intro">이번 여행(2026년 11월 19일~22일)은 일본의 <b>새 면세(리펀드) 제도</b>가 적용되는 시기입니다. <b>2026년 11월 1일 구매분부터</b> 매장에서 바로 면세 가격으로 사는 방식이 끝나고, <b>세금 포함 가격으로 먼저 결제한 뒤 출국 당일 공항 세관에서 물품을 확인받고 환급</b>받는 방식으로 바뀝니다. GU·돈키호테에서 산 물건도 모두 이 절차를 따릅니다.</p>
+
+  <h3 class="shop-subh"><span class="no">1</span> 새 면세 제도 한눈에 보기</h3>
+  <div class="compare">
+    <div class="cmp old">
+      <h4>기존 방식 <span class="badge">~2026.10.31까지</span></h4>
+      <ul>
+        <li>매장에서 여권을 보여주면 <b>면세 가격</b>으로 바로 결제</li>
+        <li>소모품은 특수 포장으로 봉인해 일본 내 개봉 금지</li>
+        <li class="dim">공항에서는 별도 물품 확인 절차 없이 출국하는 경우가 대부분</li>
+      </ul>
+    </div>
+    <div class="cmp new">
+      <h4>새 방식 <span class="badge">2026.11.1 구매분부터</span></h4>
+      <ul>
+        <li>매장에서 여권을 제시하고 <b>세금 포함 가격</b>으로 먼저 결제. 환급 방법도 이때 등록</li>
+        <li>출국 당일 <b>간사이국제공항 세관</b>에서 면세 물품을 실제로 국외로 반출하는지 확인</li>
+        <li>세관 확인 후 등록한 방법으로 <b>소비세 상당액을 환급</b></li>
+        <li>소모품 특수 포장 폐지. 단, 일본에서 먹거나 사용한 상품은 환급 불가</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="shop-subh"><span class="no">2</span> 출국까지 3단계 체크리스트</h3>
+  <div class="steps">
+    <div class="step-card">
+      <div class="step-num"><span class="dotn">1</span> 매장에서</div>
+      <h4>구매할 때 — 여권·세금 포함 결제·환급 등록</h4>
+      <ul>
+        <li><b>여권을 제시</b>하고 면세 구매로 등록 (여권 명의로 구매 기록이 남음)</li>
+        <li>할인된 가격이 아니라 <b>소비세 포함 가격</b>으로 전액 결제</li>
+        <li>계산할 때 <b>환급 방법</b>(카드·계좌 등)을 등록. 영수증과 구매 기록은 출국 때까지 보관</li>
+        <li>최소 구매금액은 <b>세전 5,000엔 이상</b>. 세전 금액 기준으로 확인</li>
+      </ul>
+      <div class="where">장소: GU 신사이바시점, 돈키호테 우메다본점 등</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num"><span class="dotn">2</span> 간사이공항에서</div>
+      <h4>출국 당일 — 수하물 위탁 전 세관 반출 확인</h4>
+      <ul>
+        <li>출국 당일 공항에 도착하면 <b>체크인·수하물 위탁 전에 세관 확인 창구</b>부터 들르기</li>
+        <li>면세 등록한 물품을 <b>실제로 소지한 상태</b>로 제시해 국외 반출 확인을 받기</li>
+        <li>확인 도장을 받은 뒤에야 위탁수하물에 넣거나 기내 반입</li>
+      </ul>
+      <div class="where">장소: 간사이국제공항 출국장 세관 · 4일차(11/22) 7C1326 탑승 전</div>
+    </div>
+    <div class="step-card">
+      <div class="step-num"><span class="dotn">3</span> 환급받기</div>
+      <h4>세관 확인 후 — 등록한 방법으로 환급</h4>
+      <ul>
+        <li>세관 확인이 끝나면 구매 시 등록한 방법으로 <b>소비세 상당액이 환급</b>됨</li>
+        <li>환급 시점·수수료는 등록한 환급 수단과 업체에 따라 다를 수 있으니 영수증의 안내를 확인</li>
+        <li>환급이 입금됐는지 귀국 후 한 번 더 확인</li>
+      </ul>
+      <div class="where">구매일부터 <b>90일 이내 출국</b>해야 환급 대상 유지</div>
+    </div>
+  </div>
+
+  <div class="key-order" role="note">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+    <p><span class="seq">가장 중요한 순서: 세관 확인 → 수하물 위탁.</span> 수하물을 먼저 맡기면 세관이 물품을 확인할 수 없어 <b>환급을 받을 수 없습니다.</b> 면세 물품은 손에 들고 세관 확인을 마친 뒤에 캐리어에 넣으세요. 4일차에는 공항 도착 후 체크인 카운터로 바로 가지 말고 세관 확인부터 챙기는 게 안전합니다.</p>
+  </div>
+
+  <h3 class="shop-subh"><span class="no">3</span> 점포별 메모</h3>
+  <div class="store-grid">
+    <div class="store">
+      <h4>GU 신사이바시점</h4>
+      <div class="when">2일차 · 11월 20일(금) 오후 · 신사이바시·도톤보리 자유시간 · 지도 ⑬번</div>
+      <div class="meta-line"><span class="k">영업시간</span><span>11:00 ~ 21:00</span></div>
+      <div class="meta-line"><span class="k">면세</span><span>면세 대응 점포 (새 제도: 세금 포함 결제 후 공항 환급)</span></div>
+      <ul>
+        <li>의류는 세전 5,000엔을 넘기기 쉬운 편. 가족 물건을 한 번에 모아 결제하면 기준을 맞추기 수월함</li>
+        <li>면세 등록한 옷은 출국 확인 전까지 <b>입거나 세탁하지 말고</b> 쇼핑백·포장 그대로 보관</li>
+        <li>저녁 창코나베 식사 동선과 겹치지 않게, 자유시간 초반에 먼저 들르는 편이 좋음</li>
+      </ul>
+      <div class="tip"><b>주의:</b> 21시 마감입니다. 피팅 후 구매한 옷도 태그를 떼지 않은 상태로 두면 세관 확인 때 설명이 쉽습니다.</div>
+    </div>
+    <div class="store">
+      <h4>돈키호테 우메다본점</h4>
+      <div class="when">1일차 · 11월 19일(목) 저녁 · 숙소(이비스 버젯 우메다) 인근 · 지도 ⑦번</div>
+      <div class="meta-line"><span class="k">영업시간</span><span>24시간</span></div>
+      <div class="meta-line"><span class="k">면세</span><span>면세 물품은 새 제도에 따라 공항에서 확인·환급 (매장 대응은 방문 시 확인)</span></div>
+      <ul>
+        <li>1일차 밤에 사면 3일차 숙소 이동(간사이공항 인근) 전까지 계속 들고 다녀야 함</li>
+        <li>돈키호테는 우메다본점 한 곳만 이용 — 부피 큰 물건도 이날 한 번에 몰아서 사는 편이 동선이 가벼움</li>
+        <li>면세 등록 후에는 영수증과 물품을 분리하지 말고 한 봉투에 함께 보관</li>
+      </ul>
+      <div class="tip"><b>주의:</b> 첫날 밤 쇼핑은 가볍게. 면세로 산 물건은 4일차 세관 확인 때 바로 꺼낼 수 있게, 캐리어 맨 위나 별도 가방에 모아두세요.</div>
+    </div>
+  </div>
+
+  <h3 class="shop-subh"><span class="no">4</span> 꼭 기억할 주의사항</h3>
+  <ul class="shop-cautions">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>일본 내에서 개봉·사용하면 환급 불가.</b> 과자·음료·화장품 등 소모품은 특수 포장이 없어졌지만, 먹거나 바르거나 입으면 반출 확인 대상에서 빠집니다. 선물용과 현지에서 쓸 물건은 계산을 나누세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span><b>구매일부터 90일 이내에 출국해야 합니다.</b> 이번 여행은 구매 후 1~3일 안에 출국하므로 기간은 문제없지만, 면세 등록한 물품은 출국 당일까지 실제로 소지하고 있어야 합니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v10M9 9.5h6"/></svg>
+      <span><b>최소 구매금액은 세전 5,000엔.</b> 세금 포함 표시가격이 아니라 세전 기준이므로, 경계선에 걸치면 점원에게 세전 금액을 확인한 뒤 결제하세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+      <span><b>여권은 쇼핑할 때 반드시 지참.</b> 면세 등록은 여권 명의로 이뤄지며, 세관 확인 때도 같은 여권이 필요합니다. 호텔 금고에만 두지 말고 쇼핑 날에는 꼭 챙기세요.</span>
+    </li>
+  </ul>
+  <p class="shop-source">제도 개요는 2026년 11월 1일 시행되는 일본 면세(리펀드) 제도 기준이며, 점포별 환급 수단·수수료와 세관 창구 위치는 출국 전 공식 안내로 한 번 더 확인하세요.</p>
+
+  <h3 class="shop-subh"><span class="no">5</span> 일본 신면세 실전 체크리스트 (11/1 시행)</h3>
+  <ul class="shop-cautions">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>11/1부터 매장 즉시 면세 종료.</b> 세금 포함 가격으로 먼저 결제 + 여권 제시 + 환급 방법 등록 (GU·돈키호테 동일)</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>출국 당일(11/22 간사이공항) 순서가 핵심:</b> ① 위탁수하물 맡기기 전에 세관 키오스크에서 여권 스캔 ② GREEN이면 통과, RED면 면세품 전량 들고 세관 카운터로 ③ 수하물을 먼저 맡기면 RED 판정 시 꺼내기 곤란 → 반드시 세관 확인 후 수하물 위탁</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>면세품은 기내 반입 가방으로 챙기기.</b> 일본에서 개봉·사용·섭취한 상품은 환급 불가 (돈키호테 식품·화장품 특히 주의)</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>조건:</b> 1회 구매 5,000엔(세전) 이상, 구매일로부터 90일 이내 출국. 소모품 특수 밀봉포장·50만엔 상한은 폐지됨</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>Visit Japan Web 사전 등록 권장</b></span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>환급 안내:</b> 환급은 세관 확인 후 등록한 방법으로 진행되며 당일 입금이 아닐 수 있음. 매장별 환급 운영 세부는 출발 직전 재확인 필요</span>
+    </li>
+  </ul>
+
+  <h3 class="shop-subh"><span class="no">6</span> 환급방식 등록 방법 (2026년 11월 1일 시행 신제도)</h3>
+  <ul class="shop-cautions">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>구매 시:</b> 세금 포함 금액으로 결제 + 여권 제시. 영수증의 QR코드(J-TaxRefund)로 접속해 여권번호·연락처·환급받을 카드번호를 등록. 한 번 등록하면 이후 구매는 자동 연결됩니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>환급사업자 확인:</b> 결제 시 점원에게 환급사업자가 어디인지 확인해 두세요. 매장마다 다릅니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>출국 당일:</b> 수하물 위탁 전에 공항 세관 키오스크에서 여권 스캔 → 반출 확인 후 등록한 방법으로 환급됩니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+      <span><b>순서 주의:</b> 면세품은 캐리어에 넣기 전에 세관 확인을 받아야 합니다. 위탁수하물로 먼저 부치면 환급이 거절될 수 있습니다.</span>
+    </li>
+  </ul>
+
+  <h3 class="shop-subh"><span class="no">7</span> 트래블로그 카드로 환급받을 때 주의사항</h3>
+  <ul class="shop-cautions">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>카드 환급이 표준 방식.</b> 트래블로그(VISA·마스터) 번호를 등록할 수 있습니다. 단, JCB 브랜드는 받지 않는 환급사업자도 있습니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>입금이 늦을 수 있음.</b> 체크카드라 신용카드보다 입금이 늦어 수일~1개월 이상 걸릴 수 있습니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>10% 전액을 받지는 못합니다.</b> 환급 수수료 1.5~5%가 차감되고 카드사 환율로 입금됩니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>앱 지갑 출금 기한 주의.</b> 사업자에 따라 환급액이 앱 지갑에 먼저 들어오고 직접 출금 버튼을 눌러야 하는 경우가 있습니다. 출금 기한을 놓치면 소멸합니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg>
+      <span><b>공항 면세점 구매분은 이 절차가 필요 없습니다.</b> 뉴욕 퍼펙트 치즈·도쿄바나나·로이스 감자칩은 이미 면세가라 제외. 돈키호테 구매분만 해당합니다.</span>
+    </li>
+  </ul>
+  <p class="shop-source">참고: 이번 쇼핑 총액(약 39,100엔) 기준 예상 환급액은 수수료 차감 후 약 3,000엔 안팎입니다.</p>
+</section>
+
+<!-- ================= 일본 ATM 현금 인출 ================= -->
+<section id="atm" aria-labelledby="atm-h">
+  <div class="sec-head">
+    <h2 id="atm-h">일본 ATM 현금 인출</h2>
+    <span class="sub">트래블로그 마스터카드 체크카드 기준</span>
+  </div>
+
+  <p class="shop-intro">현금이 꼭 필요한 곳(타코야키 탄지로 등 현금 전용 가게)에서 쓸 엔화는 <b>Seven Bank ATM</b>에서 뽑는 게 핵심입니다. 트래블로그 해외 인출 수수료는 면제지만, ATM 기기 이용 수수료는 기기마다 다르니 아래 7가지만 기억하세요.</p>
+
+  <ul class="shop-cautions">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+      <span><b>수수료 구조:</b> 해외 인출 수수료는 면제지만, 일본 현지 ATM 운영사가 별도로 기기 이용 수수료(Surcharge)를 붙일 수 있어 브랜드에 맞는 ATM을 써야 합니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+      <span><b>마스터카드는 Seven Bank ATM에서 기기 이용 수수료 무료</b> — 세븐일레븐·공항·기차역·쇼핑몰에 있습니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <span><b>'Seven Bank' 로고부터 확인:</b> 세븐일레븐이라도 지점에 따라 다른 운영사 ATM이 있을 수 있으니, 기기 외부나 화면의 로고를 먼저 보세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span><b>1일차 동선:</b> 타코야키 탄지로(현금 전용) 가기 전에 세븐일레븐 Seven Bank ATM에서 엔화를 먼저 인출해 두면 됩니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      <span><b>비밀번호 팁:</b> 6자리 비밀번호를 요구하면 카드 비밀번호 앞 4자리 + 00을 입력하세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>
+      <span><b>인출이 안 될 때:</b> 엔화 잔액이 부족하면 하나머니 앱에서 엔화 잔액을 충전·확인하고, 한도를 초과했으면 금액을 줄여서 다시 시도하세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM21 14v1M14 21h1M18 18h3v3h-3z"/></svg>
+      <span><b>카드 분실·손상 시 대안:</b> 하나머니 앱 GLN QR 출금으로 Seven Bank ATM에서 뽑을 수 있어요. 출국 전 GLN 가입·본인인증을 미리 해두면 좋습니다.</span>
+    </li>
+  </ul>
+  <p class="shop-source">참고: 트래블로그 공식 블로그 「일본 ATM 인출 총정리」 (2026년 8월 24일 업데이트) · 우리 카드(트래블로그 마스터카드 체크카드) 기준 정리</p>
+</section>
+
+<!-- ================= 기념품 쇼핑리스트 ================= -->
+<section id="gift-list" aria-labelledby="gift-h">
+  <div class="sec-head">
+    <h2 id="gift-h">기념품 쇼핑리스트</h2>
+    <span class="sub">돈키호테 우메다본점(11/19) · 간사이공항 면세(11/22)</span>
+  </div>
+
+  <p class="gift-intro"><b>예산 기준</b> — 친구 4명은 루루룬 세트를 중심으로 구성하고, 동생네 부부·아버지·시부모님·시동생네 부부 선물과 내 쇼핑까지 한 번에 확인할 수 있게 정리했습니다. 환율 100엔당 약 852원 기준이며, 가격은 매장 가격표를 보고 가감하면 됩니다. <b>구매처 표기</b> — <b>돈키</b> = 돈키호테 우메다본점(11/19 저녁), <b>공항</b> = 간사이공항 면세(11/22 출국).</p>
+
+  <div class="gift-total">
+    <h3>전체 합계</h3>
+    <div class="grand">약 39,100엔 · 약 333,300원</div>
+    <p class="sub">친구 4명 약 5,546엔 + 동생네 부부 약 3,329엔 + 아버지 2,320엔 + 시부모님 약 1,560엔 + 시동생네 부부 약 1,800엔 + 내 쇼핑 약 24,600엔. 돈키호테 구매분은 한 번에 결제하면 면세(세전 5,000엔 이상)도 한 번에 처리됩니다.</p>
+  </div>
+
+  <table class="gift-summary" aria-label="대상별 합계">
+    <thead>
+      <tr><th>대상</th><th class="p">엔</th><th class="p">원화</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>친구 4명</td><td class="p">약 5,546엔</td><td class="p">약 47,300원</td></tr>
+      <tr><td>동생네 부부 (1세트)</td><td class="p">약 3,329엔</td><td class="p">약 28,400원</td></tr>
+      <tr><td>아버지 (1세트)</td><td class="p">2,320엔</td><td class="p">약 19,800원</td></tr>
+      <tr><td>시부모님 (1세트)</td><td class="p">약 1,560엔</td><td class="p">약 13,300원</td></tr>
+      <tr><td>시동생네 부부 (1세트)</td><td class="p">약 1,800엔</td><td class="p">약 15,300원</td></tr>
+      <tr><td>내 쇼핑 (16종)</td><td class="p">약 24,600엔</td><td class="p">약 209,300원</td></tr>
+      <tr><td><b>총합</b></td><td class="p"><b>약 39,100엔</b></td><td class="p"><b>약 333,300원</b></td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="shop-subh"><span class="no">선물</span> 친구 · 동생네 부부 · 아버지 · 시부모님 · 시동생네 부부</h3>
+
+  <div class="gift-grid">
+
+    <div class="gift-card">
+      <div class="gift-card-h">
+        <h4>친구 4명</h4><span class="who">지은 · 명숙 · 승아 · 선미</span><span class="amt">합계 약 5,546엔</span>
+      </div>
+      <table class="gift-table" aria-label="친구 4명 이름별 선물 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr class="group-row"><td colspan="3">지은 · 약 1,469엔 / 약 12,500원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-ex.jpg" alt="루루룬 하이드라 EX 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 EX 마스크 7매입</span> <span class="buy">돈키</span></div></div></td><td class="p">880엔</td><td class="p">약 7,500원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/blendy-portion-black.jpg" alt="AGF 블렌디 포션커피 블랙 무당 패키지"><div class="product-meta"><span class="product-name">AGF 블렌디 포션커피 블랙(무당)</span> <span class="buy">돈키</span></div></div></td><td class="p">259엔</td><td class="p">약 2,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/one-drop-osmanthus.jpg" alt="1滴消臭元 금목서향 20ml 노란 패키지"><div class="product-meta"><span class="product-name">1滴消臭元(일적소취원) 금목서향 20ml</span> <span class="buy">돈키</span></div></div></td><td class="p">약 330엔</td><td class="p">약 2,800원</td></tr>
+
+          <tr class="group-row"><td colspan="3">명숙 · 약 1,359엔 / 약 11,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-az.jpg" alt="루루룬 하이드라 AZ 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 AZ 마스크 7매입</span> <span class="buy">돈키</span></div></div></td><td class="p">770엔</td><td class="p">약 6,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/blendy-portion-tea.webp" alt="AGF 블렌디 포션 홍차 밀크티용 6개입 패키지"><div class="product-meta"><span class="product-name">AGF 블렌디 포션홍차(밀크티)</span> <span class="buy">돈키</span></div></div></td><td class="p">약 259엔</td><td class="p">약 2,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/one-drop-osmanthus.jpg" alt="1滴消臭元 금목서향 20ml 노란 패키지"><div class="product-meta"><span class="product-name">1滴消臭元(일적소취원) 금목서향 20ml</span> <span class="buy">돈키</span></div></div></td><td class="p">약 330엔</td><td class="p">약 2,800원</td></tr>
+
+          <tr class="group-row"><td colspan="3">승아 · 약 1,359엔 / 약 11,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-az.jpg" alt="루루룬 하이드라 AZ 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 AZ 마스크 7매입</span> <span class="buy">돈키</span></div></div></td><td class="p">770엔</td><td class="p">약 6,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/blendy-portion-black.jpg" alt="AGF 블렌디 포션커피 블랙 무당 패키지"><div class="product-meta"><span class="product-name">AGF 블렌디 포션커피 블랙(무당)</span> <span class="buy">돈키</span></div></div></td><td class="p">259엔</td><td class="p">약 2,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/one-drop-osmanthus.jpg" alt="1滴消臭元 금목서향 20ml 노란 패키지"><div class="product-meta"><span class="product-name">1滴消臭元(일적소취원) 금목서향 20ml</span> <span class="buy">돈키</span></div></div></td><td class="p">약 330엔</td><td class="p">약 2,800원</td></tr>
+
+          <tr class="group-row"><td colspan="3">선미 · 카페인 취약 · 약 1,359엔 / 약 11,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-az.jpg" alt="루루룬 하이드라 AZ 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 AZ 마스크 7매입</span> <span class="buy">돈키</span></div></div></td><td class="p">770엔</td><td class="p">약 6,600원</td></tr>
+          <tr><td><div class="product-cell"><div class="product-meta"><span class="product-name">포션음료(딸기·과일맛)<small>매장에서 고르기</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 259엔</td><td class="p">약 2,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/one-drop-osmanthus.jpg" alt="1滴消臭元 금목서향 20ml 노란 패키지"><div class="product-meta"><span class="product-name">1滴消臭元(일적소취원) 금목서향 20ml</span> <span class="buy">돈키</span></div></div></td><td class="p">약 330엔</td><td class="p">약 2,800원</td></tr>
+          <tr class="total-row"><td>친구 4명 합계</td><td class="p">약 5,546엔</td><td class="p">약 47,300원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">지은·명숙·승아는 각자 고른 마스크와 포션음료로, 카페인에 예민한 선미는 하이드라 AZ와 과일맛 포션음료로 구성합니다. <b>일적소취원</b>은 변기에 한 방울 떨어뜨려 냄새를 줄이는 금목서향 제품입니다.</p>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-h">
+        <h4>동생네 부부</h4><span class="who">임산부 배려</span><span class="amt">약 3,329엔</span>
+      </div>
+      <table class="gift-table" aria-label="동생네 부부 선물 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-az.jpg" alt="루루룬 하이드라 AZ 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 AZ 마스크 7매입</span> <span class="buy">돈키</span></div></div></td><td class="p">770엔</td><td class="p">약 6,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/blendy-portion-black.jpg" alt="AGF 블렌디 포션커피 블랙 무당 패키지"><div class="product-meta"><span class="product-name">AGF 블렌디 포션커피 블랙(무당)</span> <span class="buy">돈키</span></div></div></td><td class="p">259엔</td><td class="p">약 2,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/newyork-perfect-cheese.jpg" alt="뉴욕 퍼펙트 치즈 골드 개별 포장과 과자"><div class="product-meta"><span class="product-name">뉴욕 퍼펙트 치즈<small>ニューヨークパーフェクトチーズ</small></span> <span class="buy air">공항</span></div></div></td><td class="p">1,200엔</td><td class="p">약 10,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/biore-u-body-lotion-osmanthus.png" alt="비오레 u 더 바디 금목서향 바디로션 패키지"><div class="product-meta"><span class="product-name">비오레 u 더 바디 바디로션 금목서향<small>욕실에서 젖은 몸에 바르는 타입</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 1,100엔</td><td class="p">약 9,400원</td></tr>
+          <tr class="total-row"><td>합계</td><td class="p">약 3,329엔</td><td class="p">약 28,400원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">포션커피는 카페인 함유라 남편용. 뉴욕 퍼펙트 치즈는 출국 당일 간사이공항 면세에서 구매합니다.</p>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-h">
+        <h4>아버지 (2만원 이내) — 파스 + 과자</h4><span class="who">1세트 2만원 이내</span><span class="amt">2,320엔</span>
+      </div>
+      <table class="gift-table" aria-label="아버지 선물 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/salonpas.jpg" alt="샤론파스 140매 패키지"><div class="product-meta"><span class="product-name">샤론파스 140매</span> <span class="buy">돈키</span></div></div></td><td class="p">1,260엔</td><td class="p">약 10,700원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/shiroi-koibito.jpg" alt="시로이 코이비토 화이트 초콜릿 패키지"><div class="product-meta"><span class="product-name">시로이 코이비토 화이트 초콜릿</span> <span class="buy air">공항</span></div></div></td><td class="p">1,060엔</td><td class="p">약 9,000원</td></tr>
+          <tr class="total-row"><td>합계</td><td class="p">2,320엔</td><td class="p">약 19,800원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">파스에 선물용 과자 하나를 더한 구성. 시로이 코이비토는 상자가 있어 선물하기 좋고, 2만원 안에 들어갑니다.</p>
+    </div>
+
+        <div class="gift-card">
+      <div class="gift-card-h">
+        <h4>시부모님</h4><span class="who">공항면세 + 돈키</span><span class="amt">약 1,560엔</span>
+      </div>
+      <table class="gift-table" aria-label="시부모님 선물 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/shiroi-koibito.jpg" alt="시로이 코이비토 화이트 초콜릿 패키지"><div class="product-meta"><span class="product-name">시로이 코이비토 화이트 초콜릿<small>2026년 9월 기준 공항면세가</small></span> <span class="buy air">공항</span></div></div></td><td class="p">1,060엔</td><td class="p">약 9,000원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/oi-ocha-teabag.webp" alt="이토엔 오이오차 티백 패키지"><div class="product-meta"><span class="product-name">오이오차 티백<small>伊藤園 お〜いお茶 ティーバッグ</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 500엔</td><td class="p">약 4,300원</td></tr>
+          <tr class="total-row"><td>합계</td><td class="p">약 1,560엔</td><td class="p">약 13,300원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">시로이 코이비토는 출국 당일 간사이공항 면세에서, 오이오차 티백은 돈키호테에서 구매합니다.</p>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-h">
+        <h4>시동생네 부부</h4><span class="who">공항면세 + 돈키</span><span class="amt">약 1,800엔</span>
+      </div>
+      <table class="gift-table" aria-label="시동생네 부부 선물 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/newyork-perfect-cheese.jpg" alt="뉴욕 퍼펙트 치즈 골드 개별 포장과 과자"><div class="product-meta"><span class="product-name">뉴욕 퍼펙트 치즈<small>ニューヨークパーフェクトチーズ</small></span> <span class="buy air">공항</span></div></div></td><td class="p">1,200엔</td><td class="p">약 10,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/bub-hinoki.jpg" alt="카오 바브 히노끼향 입욕제 20정입 패키지"><div class="product-meta"><span class="product-name">바브 히노끼향 입욕제<small>花王 バブ ひのきの香り</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 600엔</td><td class="p">약 5,100원</td></tr>
+          <tr class="total-row"><td>합계</td><td class="p">약 1,800엔</td><td class="p">약 15,300원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">뉴욕 퍼펙트 치즈는 출국 당일 간사이공항 면세에서, 입욕제는 돈키호테에서 구매합니다.</p>
+    </div>
+
+<div class="gift-card">
+      <div class="gift-card-h">
+        <h4>내 쇼핑</h4><span class="who">16종 · 25개</span><span class="amt">약 24,600엔</span>
+      </div>
+      <table class="gift-table" aria-label="내 쇼핑 구성">
+        <thead><tr><th>상품</th><th class="p">엔</th><th class="p">원화</th></tr></thead>
+        <tbody>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/cabagin.jpg" alt="카베진 코와 알파 300정 패키지"><div class="product-meta"><span class="product-name">카베진 코와 알파 300정 ×1<small>매장에는 리뉴얼된 알파 플러스로 진열될 수 있음</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 2,300엔</td><td class="p">약 19,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/acnes25-medical-creamexa.jpg" alt="멘소래담 아크네스25 메디컬 크림 EXa 16g 패키지"><div class="product-meta"><span class="product-name">멘소래담 아크네스25 메디컬 크림 EXa 16g ×3<small>개당 약 1,320엔</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 3,960엔</td><td class="p">약 33,700원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/lululun-hydra-az.jpg" alt="루루룬 하이드라 AZ 마스크 7매입 패키지"><div class="product-meta"><span class="product-name">루루룬 하이드라 AZ 마스크 7매입 ×1</span> <span class="buy">돈키</span></div></div></td><td class="p">770엔</td><td class="p">약 6,600원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/anua-azelaic-serum.webp" alt="아누아 아젤라익애씨드 15 인텐스 카밍 세럼 30ml 병"><div class="product-meta"><span class="product-name">아누아 아젤라익애씨드 세럼 30ml ×2<small>개당 약 2,800엔</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 5,600엔</td><td class="p">약 47,700원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/hadabisei-choi-acne.webp" alt="하다비세이 CHOI 약용 니키비케어 마스크 10매입 패키지"><div class="product-meta"><span class="product-name">하다비세이 CHOI 약용 마스크 10매입 ×2<small>개당 약 700엔 · 의약부외품</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 1,400엔</td><td class="p">약 11,900원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/biore-u-body-lotion-osmanthus.png" alt="비오레 u 더 바디 금목서향 바디로션 패키지"><div class="product-meta"><span class="product-name">비오레 u 더 바디 바디로션 금목서향 ×1<small>욕실에서 젖은 몸에 바르는 타입</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 1,100엔</td><td class="p">약 9,400원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/kurakon-shio-kombu.webp" alt="쿠라콘 시오콘부 47g 패키지"><div class="product-meta"><span class="product-name">시오콘부(쿠라콘 塩こんぶ 47g) ×2<small>개당 약 200엔</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 400엔</td><td class="p">약 3,400원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/biore-uv-aqua-rich.jpg" alt="비오레 UV 아쿠아리치 워터리 에센스 튜브"><div class="product-meta"><span class="product-name">비오레 UV 아쿠아리치 워터리 에센스 ×2<small>개당 약 1,000엔</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 2,000엔</td><td class="p">약 17,000원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/one-drop-osmanthus.jpg" alt="1滴消臭元 금목서향 20ml 노란 패키지"><div class="product-meta"><span class="product-name">1滴消臭元(일적소취원) 금목서향 20ml ×3<small>개당 약 330엔</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 990엔</td><td class="p">약 8,400원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/kobayashi-breath-care.webp" alt="고바야시제약 브레스케어 민트 50립 패키지"><div class="product-meta"><span class="product-name">고바야시제약 브레스케어 50립 ×2<small>개당 약 570엔 · 물로 삼키는 캡슐형 입냄새 케어</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 1,140엔</td><td class="p">약 9,700원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/bub-yuzu.jpg" alt="바브 유자의 향기 20정입 패키지"><div class="product-meta"><span class="product-name">바브 유자의 향기 20정입 ×1<small>카오 탄산 입욕제</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 1,000엔</td><td class="p">약 8,500원</td></tr>
+                    <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/royce-potatochip.jpg" alt="로이스 포테토칩 초콜릿과 포장 상자"><div class="product-meta"><span class="product-name">로이스 감자칩(화이트초콜릿) ×1<small>ロイズ ポテトチップチョコレート</small></span> <span class="buy air">공항</span></div></div></td><td class="p">1,100엔</td><td class="p">약 9,400원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/tokyo-banana.jpg" alt="도쿄바나나 개별 포장 2개"><div class="product-meta"><span class="product-name">도쿄바나나 ×1<small>東京ばな奈</small></span> <span class="buy air">공항</span></div></div></td><td class="p">700엔</td><td class="p">약 6,000원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/newyork-perfect-cheese.jpg" alt="뉴욕 퍼펙트 치즈 골드 개별 포장과 과자"><div class="product-meta"><span class="product-name">뉴욕 퍼펙트 치즈 ×1<small>ニューヨークパーフェクトチーズ</small></span> <span class="buy air">공항</span></div></div></td><td class="p">1,200엔</td><td class="p">약 10,200원</td></tr>
+          <tr><td><div class="product-cell"><img class="product-thumb" src="assets/products/oi-ocha-teabag.webp" alt="이토엔 오이오차 티백 패키지"><div class="product-meta"><span class="product-name">오이오차 티백 ×1<small>伊藤園 お〜いお茶 ティーバッグ</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 500엔</td><td class="p">약 4,300원</td></tr>
+          <tr><td><div class="product-cell"><div class="product-meta"><span class="product-name">돈키 PB(정열가격) 호지차 ×1<small>情熱価格 ほうじ茶 · 매장에서 고르기</small></span> <span class="buy">돈키</span></div></div></td><td class="p">약 400엔</td><td class="p">약 3,400원</td></tr>
+<tr class="total-row"><td>합계</td><td class="p">약 24,600엔</td><td class="p">약 209,300원</td></tr>
+        </tbody>
+      </table>
+      <p class="gift-note">멘소래담 아크네스25 메디컬 크림 EXa는 제2류 의약품입니다. 사용상 주의사항을 확인하고, 카베진과 함께 개인 사용 수량 범위에서 구매하세요.</p>
+    </div>
+
+  </div>
+
+  <div class="gift-tips">
+    <h4>매장에서 챙길 것</h4>
+    <ul>
+      <li>가격은 추정치 — 가격표가 다르면 그 자리에서 구성을 가감하세요.</li>
+      <li>면세 리펀드(세금 포함 결제 후 공항 환급)는 합계 5,000엔 이상이라 대상. 할인쿠폰은 여권당 1회라 한 번에 몰아서 결제.</li>
+      <li>의약품(카베진·아크네스25)은 개인 사용 수량 범위에서 구매.</li>
+    </ul>
+  </div>
+
+  <div class="floor-route">
+    <h3>돈키호테 우메다본점 층별 쇼핑 동선</h3>
+    <p class="fr-sub">1층에서 담기 시작해 위로 올라가며 한 번에 쓸어 담고, 마지막에 3층 면세 카운터에서 계산하는 순서입니다. 아래 수량은 선물·내 쇼핑을 모두 합친 총수량입니다.</p>
+    <ol class="fr-steps">
+      <li class="fr-step">
+        <span class="fr-floor">1F</span>
+        <div class="fr-body">
+          <h4>화장품 ⑥ · 스킨케어 ⑦</h4>
+          <ul>
+            <li>루루룬 하이드라 AZ ×5, EX ×1</li>
+            <li>아누아 아젤라익애씨드 세럼 ×2</li>
+            <li>하다비세이 CHOI 약용 마스크 ×2</li>
+            <li>비오레 UV 아쿠아리치 ×2, 멘소래담 아크네스25 크림 ×3</li>
+            <li>비오레 u 더 바디 바디로션 금목서향 ×2</li>
+          </ul>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">1F</span>
+        <div class="fr-body">
+          <h4>아로마·향수 ⑨</h4>
+          <ul>
+            <li>일적소취원 금목서향 ×7</li>
+          </ul>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">1F</span>
+        <div class="fr-body">
+          <h4>오럴케어 ②</h4>
+          <ul>
+            <li>고바야시제약 브레스케어 50립 ×2</li>
+          </ul>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">1F</span>
+        <div class="fr-body">
+          <h4>일용품 ⑤</h4>
+          <ul>
+            <li>바브 유자의 향기 ×1, 바브 히노끼향 ×1</li>
+          </ul>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">2F</span>
+        <div class="fr-body">
+          <h4>식료품 ㉕</h4>
+          <ul>
+            <li>AGF 블렌디 포션커피 ×3, 포션홍차 ×1, 과일맛 포션음료 ×1</li>
+            <li>시오콘부 ×2, 오이오차 티백 ×2, 돈키 PB 호지차 ×1</li>
+          </ul>
+          <p>과자 ㉓㉔ 코너는 패스 — 과자 선물(시로이 코이비토·뉴욕 퍼펙트 치즈·로이스 감자칩·도쿄바나나)은 4일차 간사이공항 면세에서 구매합니다.</p>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">3F</span>
+        <div class="fr-body">
+          <h4>의약품 ㉘</h4>
+          <ul>
+            <li>카베진 코와 알파 300정 ×1, 샤론파스 140매 ×1</li>
+          </ul>
+        </div>
+      </li>
+      <li class="fr-step">
+        <span class="fr-floor">계산</span>
+        <div class="fr-body">
+          <h4>3층 면세 카운터</h4>
+          <p>세금 포함 금액으로 결제 + 여권 제시, 영수증 QR(J-TaxRefund)로 환급방식 등록까지 마치고 나오세요.</p>
+        </div>
+      </li>
+    </ol>
+    <p class="fr-tip"><b>팁:</b> 1층에서 큰 바구니로 시작해 1층 → 2층 → 3층 순서로 올라가면 동선 낭비가 없습니다.</p>
+    <p class="fr-note">층별 코너 번호(⑥⑦⑨②⑤㉕㉘)는 돈키호테 우메다본점 플로어맵 기준입니다.</p>
+  </div>
+</section>
+
+<!-- ================= 유의사항 ================= -->
+<section id="notes" aria-labelledby="notes-h">
+  <div class="sec-head">
+    <h2 id="notes-h">유의사항</h2>
+  </div>
+  <ul class="notes">
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <span><b>식당 영업시간·가격은 출발 직전(11월 중순경)에 한 번 더 확인</b> — 현재 표기된 정보는 2026년 8~9월 기준 조사 내용입니다.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      <span><b>2일차 도톤보리 자유시간 여부는 현지 가이드에게 미리 확인</b> — 일정상 점심시간에 고베에 있을 가능성이 높아, 도톤보리 식당은 자유시간이 확보될 때만 선택하세요.</span>
+    </li>
+    <li>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 7v10M9 9.5h6"/></svg>
+      <span><b>자유식 지원금은 1인 1,000엔</b> — 규카츠(2,110엔) 등 초과분은 본인 부담 추가금이 발생합니다.</span>
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <p>일정표 작성 기준: 2026년 10월 1일 · 참좋은여행 JPP6610-2611197C</p>
+  <p>지도 핀 위치는 각 장소의 대표 좌표이며, 식당 위치·영업시간·가격은 방문 전 지도 링크에서 다시 확인해 주세요.</p>
+</footer>
+</div>
+
+<script src="assets/hatch-maps.js"></script>
+<script src="assets/map_helpers.js"></script>
+<script>
+var DAY_COLORS = {1:"#d6572b",2:"#2b7cd3",3:"#2e9e5b"};
+var DAY_NAMES = {
+  1:"1일차 · 11/19(목) 오사카",
+  2:"2일차 · 11/20(금) 고베 → 신사이바시",
+  3:"3일차 · 11/21(토) 교토 → 나라"
+};
+var PLACES = [
+ {n:1,day:1,label:"간사이국제공항",cat:"공항",lat:34.4359767,lng:135.2464856,
+  blurb:"1일차 7C1327 15:40 도착 · 4일차 7C1326 11:00 출발",
+  url:"https://www.google.com/maps/search/?api=1&query=%EA%B0%84%EC%82%AC%EC%9D%B4%EA%B5%AD%EC%A0%9C%EA%B3%B5%ED%95%AD%2C%20Osaka%2C%20Japan"},
+ {n:2,day:1,label:"오사카성",cat:"관광지",lat:34.6890497,lng:135.5326194,
+  blurb:"천수각 내부 제외 · 천수각 외관·공원 산책",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%98%A4%EC%82%AC%EC%B9%B4%EC%84%B1%2C%20Osaka%2C%20Japan"},
+ {n:3,day:1,label:"이비스 버젯 오사카 우메다",cat:"숙박",lat:34.7052914,lng:135.5037625,
+  blurb:"1·2일차 숙박",
+  url:"https://www.google.com/maps/search/?api=1&query=ibis%20Budget%20Osaka%20Umeda%2C%20Japan"},
+ {n:4,day:1,label:"스시로 우메다 차야마치점",cat:"식당 · 자유식",lat:34.7058053,lng:135.4991708,
+  blurb:"회전초밥 · 태블릿 한글 지원 · 애니메이트와 도보 2분",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%8A%A4%EC%8B%9C%EB%A1%9C%20%EC%9A%B0%EB%A9%94%EB%8B%A4%20%EC%B0%A8%EC%95%BC%EB%A7%88%EC%B9%98%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:5,day:1,label:"니쿠지루 교자노 단다단 오사카 우메다점",cat:"식당 · 자유식",lat:34.7035969,lng:135.5006986,
+  blurb:"육즙 교자 · ④번(스시로)과 둘 중 선택",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%8B%88%EC%BF%A0%EC%A7%80%EB%A3%A8%20%EA%B5%90%EC%9E%90%EB%85%B8%20%EB%8B%A8%EB%8B%A4%EB%8B%A8%20%EC%98%A4%EC%82%AC%EC%B9%B4%20%EC%9A%B0%EB%A9%94%EB%8B%A4%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:6,day:1,label:"애니메이트 우메다점",cat:"쇼핑",lat:34.7069331,lng:135.4990514,
+  blurb:"NU茶屋町 3층 · 11:00~21:00 (폐점 21:00) · 저녁 동선 첫 순서",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%ED%8A%B8%20%EC%9A%B0%EB%A9%94%EB%8B%A4%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:7,day:1,label:"돈키호테 우메다본점",cat:"쇼핑",lat:34.7032831,lng:135.5009125,
+  blurb:"24시간 영업",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%8F%88%ED%82%A4%ED%98%B8%ED%85%8C%20%EC%9A%B0%EB%A9%94%EB%8B%A4%EB%B3%B8%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:8,day:2,label:"기타노 이진칸거리",cat:"관광지",lat:34.7016181,lng:135.1888922,
+  blurb:"고베 서양식 옛 저택 거리",
+  url:"https://www.google.com/maps/search/?api=1&query=%EA%B8%B0%ED%83%80%EB%85%B8%20%EC%9D%B4%EC%A7%84%EC%B9%B8%EA%B1%B0%EB%A6%AC%2C%20Kobe%2C%20Japan"},
+ {n:9,day:2,label:"우오신 스시 산노미야점",cat:"식당 · 자유식",lat:34.6932967,lng:135.1924675,
+  blurb:"붓치기리(대왕초밥) · 11:30~23:00 · QR 한글 메뉴",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%9A%B0%EC%98%A4%EC%8B%A0%20%EC%8A%A4%EC%8B%9C%20%EC%82%B0%EB%85%B8%EB%AF%B8%EC%95%BC%EC%A0%90%2C%20Kobe%2C%20Japan"},
+ {n:10,day:2,label:"고베규 라멘 야자와",cat:"식당 · 자유식",lat:34.6911272,lng:135.1911342,
+  blurb:"고베규 라멘 세트 1,980엔 · 점심 11:00~17:00",
+  url:"https://www.google.com/maps/search/?api=1&query=%EA%B3%A0%EB%B2%A0%EA%B7%9C%20%EB%9D%BC%EB%A9%98%20%EC%95%BC%EC%9E%90%EC%99%80%2C%20Kobe%2C%20Japan"},
+ {n:11,day:2,label:"메리켄파크",cat:"관광지",lat:34.6829172,lng:135.1881925,
+  blurb:"항구 공원 · 고베 포트타워 일대",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%A9%94%EB%A6%AC%EC%BC%84%ED%8C%8C%ED%81%AC%2C%20Kobe%2C%20Japan"},
+ {n:12,day:2,label:"고베 하버랜드 모자이크",cat:"관광지",lat:34.6787617,lng:135.1848814,
+  blurb:"하버랜드 쇼핑·산책",
+  url:"https://www.google.com/maps/search/?api=1&query=%EA%B3%A0%EB%B2%A0%20%ED%95%98%EB%B2%84%EB%9E%9C%EB%93%9C%20%EB%AA%A8%EC%9E%90%EC%9D%B4%ED%81%AC%2C%20Kobe%2C%20Japan"},
+ {n:13,day:2,label:"GU 신사이바시점",cat:"쇼핑",lat:34.6712067,lng:135.5015272,
+  blurb:"11:00~21:00 · 면세 가능",
+  url:"https://www.google.com/maps/search/?api=1&query=GU%20%EC%8B%A0%EC%82%AC%EC%9D%B4%EB%B0%94%EC%8B%9C%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:14,day:2,label:"도톤보리",cat:"관광지",lat:34.6687158,lng:135.5008664,
+  blurb:"신사이바시 스지 · 중식은 자유시간 확보 시만",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%8F%84%ED%86%A4%EB%B3%B4%EB%A6%AC%2C%20Osaka%2C%20Japan"},
+ {n:15,day:2,label:"대기수산 회전초밥 도톤보리점",cat:"식당 · 자유식",lat:34.6685547,lng:135.5028886,
+  blurb:"한국어 키오스크 지원 · 자유시간 확보 시",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EA%B8%B0%EC%88%98%EC%82%B0%20%ED%9A%8C%EC%A0%84%EC%B4%88%EB%B0%A5%20%EB%8F%84%ED%86%A4%EB%B3%B4%EB%A6%AC%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:16,day:2,label:"규카츠 모토무라 난바점",cat:"식당 · 자유식",lat:34.6664992,lng:135.5010942,
+  blurb:"130g 2,110엔(2025년 기준) · 자유시간 확보 시",
+  url:"https://www.google.com/maps/search/?api=1&query=%EA%B7%9C%EC%B9%B4%EC%B8%A0%20%EB%AA%A8%ED%86%A0%EB%AC%B4%EB%9D%BC%20%EB%82%9C%EB%B0%94%EC%A0%90%2C%20Osaka%2C%20Japan"},
+ {n:17,day:3,label:"청수사",cat:"관광지",lat:34.9944631,lng:135.7842347,
+  blurb:"교토 · 산넨자카·니넨자카와 도보 연결",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%B2%AD%EC%88%98%EC%82%AC%2C%20Kyoto%2C%20Japan"},
+ {n:18,day:3,label:"야사카신사",cat:"관광지",lat:35.0030792,lng:135.7780289,
+  blurb:"교토 · 산넨자카·니넨자카 걸어서 이동",
+  url:"https://www.google.com/maps/search/?api=1&query=%EC%95%BC%EC%82%AC%EC%B9%B4%EC%8B%A0%EC%82%AC%2C%20Kyoto%2C%20Japan"},
+ {n:19,day:3,label:"동대사·나라 사슴공원",cat:"관광지",lat:34.6869258,lng:135.83925,
+  blurb:"나라 · 대불 · 사슴 먹이주기",
+  url:"https://www.google.com/maps/search/?api=1&query=%EB%8F%99%EB%8C%80%EC%82%AC%C2%B7%EB%82%98%EB%9D%BC%20%EC%82%AC%EC%8A%B4%EA%B3%B5%EC%9B%90%2C%20Nara%2C%20Japan"},
+ {n:20,day:3,label:"Kansai Airport Hotel Pine Villa",cat:"숙박",lat:34.37338,lng:135.3273514,
+  blurb:"3일차 숙박 · 간사이공항 인근(이즈미사노시)",
+  url:"https://www.google.com/maps/search/?api=1&query=Kansai%20Airport%20Hotel%20Pine%20Villa%2C%20Osaka%2C%20Japan"}
+];
+
+(function(){
+  var DAY_CSS = {1:"var(--day1)",2:"var(--day2)",3:"var(--day3)"};
+  var groupEl = document.getElementById("place-groups");
+  var detail = document.getElementById("place-detail");
+  var mapBox = document.getElementById("map");
+  var mapNote = document.getElementById("map-note");
+  var currentFilter = 0; // 0 = all
+  var mapCtl = null;
+  var rows = [];
+
+  function htmlEscape(s){
+    return String(s).replace(/[&<>"']/g,function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+
+  function showDetail(p){
+    rows.forEach(function(r){ r.el.classList.toggle("map-selected", r.p === p); });
+    detail.querySelector(".dot").style.setProperty("--pin", DAY_CSS[p.day]);
+    detail.querySelector(".dot").textContent = p.n;
+    detail.querySelector("h4").textContent = p.label;
+    detail.querySelector(".meta").textContent = DAY_NAMES[p.day] + " · " + p.cat + " — " + p.blurb;
+    detail.querySelector("a.maps").href = p.url;
+    detail.classList.add("show");
+  }
+
+  detail.querySelector(".x").addEventListener("click", function(){
+    detail.classList.remove("show");
+    rows.forEach(function(r){ r.el.classList.remove("map-selected"); });
+  });
+
+  // build place list grouped by day
+  [1,2,3].forEach(function(day){
+    var g = document.createElement("div");
+    g.className = "placegroup";
+    g.style.setProperty("--c", DAY_CSS[day]);
+    var h = document.createElement("h3");
+    h.innerHTML = "<i></i><span>" + htmlEscape(DAY_NAMES[day]) + "</span>";
+    g.appendChild(h);
+    var ol = document.createElement("ol");
+    ol.className = "places";
+    PLACES.filter(function(p){ return p.day === day; }).forEach(function(p){
+      var li = document.createElement("li");
+      li.innerHTML =
+        '<span class="num" style="--pin:' + DAY_CSS[p.day] + '">' + p.n + '</span>' +
+        '<div style="min-width:0"><span class="nm">' + htmlEscape(p.label) + '</span>' +
+        '<span class="cat">' + htmlEscape(p.cat + " · " + p.blurb) + '</span></div>' +
+        '<a class="lnk" href="' + htmlEscape(p.url) + '" target="_blank" rel="noopener">지도</a>';
+      li.addEventListener("click", function(ev){
+        if (ev.target.tagName === "A") return;
+        showDetail(p);
+        if (mapCtl) { try { mapCtl.selectPlace(p.mapIndex); } catch(e){} }
+        var vis = detail.getBoundingClientRect();
+        if (vis.top < 0 || vis.top > window.innerHeight) {
+          detail.scrollIntoView({block:"nearest", behavior:"smooth"});
+        }
+      });
+      ol.appendChild(li);
+      rows.push({el:li, p:p});
+    });
+    g.appendChild(ol);
+    groupEl.appendChild(g);
+  });
+
+  function baseStyle(){
+    return (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ? "dark" : "light";
+  }
+
+  function destroyMap(){
+    if (mapCtl) {
+      try { mapCtl.destroy ? mapCtl.destroy() : null; } catch(e){}
+      mapCtl = null;
+    }
+    mapBox.innerHTML = "";
+  }
+
+  function mount(){
+    destroyMap();
+    detail.classList.remove("show");
+    rows.forEach(function(r){ r.el.classList.remove("map-selected"); });
+
+    var list = PLACES.filter(function(p){ return currentFilter === 0 || p.day === currentFilter; });
+    list.forEach(function(p, i){ p.mapIndex = i; });
+
+    mapCtl = MapHelpers.mountMap(mapBox, {
+      places: list,
+      baseStyle: baseStyle(),
+      marker: function(place, index, selected){
+        var color = DAY_CSS[place.day];
+        return '<div class="pin' + (selected ? " selected" : "") + '"' +
+               ' style="--pin:' + color + ';color:' + color + '" role="button" aria-label="' +
+               htmlEscape(place.label) + '">' + place.n + '</div>';
+      },
+      onSelectPlace: function(index){
+        if (index === null || index === undefined) return;
+        var p = list[index];
+        if (!p) return;
+        showDetail(p);
+        var r = rows.filter(function(x){ return x.p === p; })[0];
+        if (r) r.el.scrollIntoView({block:"nearest", behavior:"smooth"});
+      }
+    }, function onUnavailable(){
+      mapBox.classList.add("unavailable");
+      mapNote.style.display = "block";
+    });
+
+    // hide groups not in filter
+    var groups = groupEl.querySelectorAll(".placegroup");
+    [1,2,3].forEach(function(day, i){
+      groups[i].style.display = (currentFilter === 0 || currentFilter === day) ? "" : "none";
+    });
+  }
+
+  // legend filter
+  var legendBtns = document.querySelectorAll(".legend button");
+  legendBtns.forEach(function(b){
+    b.addEventListener("click", function(){
+      legendBtns.forEach(function(x){ x.setAttribute("aria-pressed","false"); });
+      b.setAttribute("aria-pressed","true");
+      currentFilter = parseInt(b.dataset.day, 10);
+      mount();
+    });
+  });
+
+  // remount on color scheme change so basemap follows
+  if (window.matchMedia) {
+    var mq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (mq.addEventListener) mq.addEventListener("change", mount);
+  }
+
+  mount();
+})();
+</script>
+<script>
+(function(){
+  var boxes = document.querySelectorAll("ul.prep input[type=checkbox]");
+  var count = document.getElementById("prep-count");
+  if (!boxes.length || !count) return;
+  function update(){
+    var done = 0;
+    boxes.forEach(function(b){
+      if (b.checked) done++;
+      var li = b.closest("li");
+      if (li) li.classList.toggle("done", b.checked);
+    });
+    count.textContent = done + " / " + boxes.length + " 완료";
+  }
+  boxes.forEach(function(b){ b.addEventListener("change", update); });
+  update();
+})();
+</script>
+</body>
+</html>
