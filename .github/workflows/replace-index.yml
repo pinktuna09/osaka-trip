@@ -20,6 +20,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git status --short
-          git commit -m "Replace index.html with true final Osaka trip page (friends gift bundle, Gold40, no Kaldi)"
+          git commit -m "Replace index.html with newest final Osaka trip page (hojicha sticks, no hand cream)"
           git push
           ls -l index.html
