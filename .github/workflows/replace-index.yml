@@ -12,6 +12,7 @@ jobs:
         run: |
           git config user.name "pinktuna09"
           git config user.email "pinktuna09@users.noreply.github.com"
+          git rm -q index.html
           git mv 3-4.html index.html
           git commit -m "Replace index.html with latest Osaka trip page"
           git push
